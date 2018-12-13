@@ -24,10 +24,10 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $user = new Users();
-
         $user->login = 'as@asadf.as';
         $user->name = 'as@asadf.as';
         $user->pass = 'as@asadf.as';
+
 
 
 
@@ -60,6 +60,7 @@ class SiteController extends Controller
 
     public function actionLogout()
     {
+        Yii::$app->user->logout();
         Yii::$app->user->logout();
 
         return $this->goHome();
