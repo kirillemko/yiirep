@@ -53,6 +53,13 @@ $config = [
             ],
         ],
 
+        'myComponent' => [
+
+            'class' => 'app\components\MyComponent',
+            'fff' => 'qqqqqqq'
+
+        ],
+
     ],
     'params' => $params,
 ];

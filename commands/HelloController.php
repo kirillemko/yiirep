@@ -7,6 +7,7 @@
 
 namespace app\commands;
 
+use app\models\Users;
 use yii\console\Controller;
 use yii\console\ExitCode;
 
@@ -27,8 +28,13 @@ class HelloController extends Controller
      */
     public function actionIndex($message = 'hello world')
     {
-        echo $message . "\n";
+        echo $message . "\n" . "\n";
 
         return ExitCode::OK;
+    }
+
+    public function actionHer()
+    {
+        echo 'her' . "\n" . "\n" . "\n" . "\n" . "\n";
     }
 }

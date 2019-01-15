@@ -4,7 +4,6 @@ namespace app\controllers;
 
 
 
-use app\controllers\base\SecuredController;
 use app\models\Tasks;
 use app\models\User;
 use app\models\Users;
@@ -22,23 +21,9 @@ class SiteController extends Controller
 {
 
 
-
-
-    public function actionE()
-    {
-
-        //Yii::$app->myComponent->welcome();
-        exit();
-    }
-
     public function actionIndex()
     {
         $user = new Users();
-
-
-        wordpress
-
-
 
         $user->login = 'as@asadf.as';
         $user->name = 'as@asadf.as';

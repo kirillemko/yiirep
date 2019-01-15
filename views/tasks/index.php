@@ -9,6 +9,8 @@ use yii\grid\GridView;
 
 $this->title = 'Задачи';
 $this->params['breadcrumbs'][] = $this->title;
+
+\app\assets\CartAsset::register($this);
 ?>
 <div class="tasks-index">
 

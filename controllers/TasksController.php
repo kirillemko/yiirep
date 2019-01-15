@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\controllers\base\SecuredController;
 use PHPUnit\Framework\Exception;
 use Yii;
 use app\models\Tasks;
@@ -13,7 +14,7 @@ use yii\filters\VerbFilter;
 /**
  * TasksController implements the CRUD actions for Tasks model.
  */
-class TasksController extends Controller
+class TasksController extends SecuredController
 {
 
     /**
