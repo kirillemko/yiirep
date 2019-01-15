@@ -22,9 +22,7 @@ class UsersController extends Controller
 
         }
 
-        return $this->render('register', [
-            'model' => $user,
-        ]);
+
     }
 
     public function actionSecret()
@@ -32,6 +30,9 @@ class UsersController extends Controller
         if( Yii::$app->user->isGuest ){
             return $this->redirect(['index']);
         }
+        sasfadf
+        sadf
+        asdf
 
         echo 'safadasfd';
         exit();
