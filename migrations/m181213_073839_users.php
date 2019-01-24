@@ -14,7 +14,7 @@ class m181213_073839_users extends Migration
         $this->createTable(self::USERS_TABLE, [
             'id' => $this->primaryKey(),
             'login' => $this->string(255),
-            'pass' => $this->string(32)
+            'pass' => $this->string(100)
         ]);
 
         $this->insert(self::USERS_TABLE, [
