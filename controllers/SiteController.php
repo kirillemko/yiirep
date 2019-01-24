@@ -33,10 +33,21 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+
+        return $this->render('qq');
+        $str = function(){
+            return '1';
+        };
+
+        echo '<pre>';
+        print_r($str);
+        exit();
+
+        return
+
         $user = new Users();
 
 
-        wordpress
 
 
 
