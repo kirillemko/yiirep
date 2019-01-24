@@ -17,10 +17,10 @@ class m181213_073839_users extends Migration
 //            'pass' => $this->string(100)
 //        ]);
 
-        $this->insert(self::USERS_TABLE, [
-            'login' => 'admin',
-            'pass' => Yii::$app->security->generatePasswordHash('admin')
-        ]);
+//        $this->insert(self::USERS_TABLE, [
+//            'login' => 'admin',
+//            'pass' => Yii::$app->security->generatePasswordHash('admin')
+//        ]);
     }
 
     public function down()
